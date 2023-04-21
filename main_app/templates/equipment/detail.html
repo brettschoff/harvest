@@ -63,7 +63,7 @@
                     {% if comment %}
                     {% for c in comment %}
                     <p>{{c.comment}}</p>
-                    <p>{{c.user.name}}</p><span>{{c.date}}</span>
+                    <span>{{c.user.username}} </span><span> {{c.date}}</span>
                     <div>
                         <a href="{% url 'equipment_comment_delete' equipment.id c.id %}"><button>DELETE COMMENT</button><a></a>
                     </div>
